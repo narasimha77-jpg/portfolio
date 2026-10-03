@@ -1,8 +1,8 @@
-# Nishan Giri | Portfolio
+# Mulagada Narasimha Chowdary | Portfolio
 
-Personal portfolio of **Nishan Giri** ("Fragger"), a B.E. CSE student at BMS Institute of Technology and Management (BMSIT), Bengaluru. It covers who I am, what I have built, the tools I work with, and how to reach me.
+Personal portfolio of **Mulagada Narasimha Chowdary** (`narasimha77-jpg`), a Full Stack Developer & Creative Technologist based in India. It highlights my projects in 3D Web, WebXR, real-time GPS telemetry, and full-stack development, along with the technologies I use and how to reach me.
 
-**Live site:** https://nishan9-99.github.io/
+**Live site:** https://narasimha77-jpg.github.io/
 
 Built with plain HTML, CSS and JavaScript. No framework, no build step, no dependencies to install.
 
@@ -10,22 +10,21 @@ Built with plain HTML, CSS and JavaScript. No framework, no build step, no depen
 
 ## What's on the site
 
-- **Hero** - name, a typing line that rotates through roles (Full Stack Developer, Gamer, Content Creator), and quick stats (years learning, B.E. CSE at BMSIT).
-- **About** - a short intro and portrait.
-- **Journey** - a timeline from starting at BMSIT, through first web projects, to what I am building now.
-- **Projects** - cards with a filter bar (All / Web / Creative). Each card opens a detail view with the problem, my role, the result and the tech used.
-- **Skills** - grouped icons for Frontend, Backend, Tools and Creative. Each icon links to the tool's official site.
-- **Contact** - a form that sends messages through Formspree, plus links to email, GitHub and LinkedIn.
-- **Resume** - a download button that serves `assets/resume.pdf`.
+- **Hero** - name, dynamic role rotator (Full Stack Developer, TypeScript Engineer, Creative Technologist, WebXR & 3D Enthusiast), and quick stats (7+ Public Repos, Full Stack).
+- **About** - background, focus areas (Full Stack, TypeScript & React, Three.js & WebXR, Real-Time & AI), and portrait art.
+- **Journey** - timeline from starting with TypeScript, through 3D graphics and WebXR, to real-time streams and AI tools.
+- **Projects** - interactive cards with filtering (All / Web / Creative & 3D). Each card opens a modal detailing the problem, role, outcome, and tech stack.
+- **Skills** - categorized technologies: Frontend, 3D & Immersive, Backend & APIs, and Tools & DevOps.
+- **Contact** - interactive contact form, holographic globe stage, and social links.
+- **Resume** - download button serving `assets/resume.pdf`.
 
-### Extras
+### Features & Extras
 
-- Dark theme with a starfield background and a custom cursor on desktop
-- Top nav that turns into a side rail as you scroll, with a menu button on mobile
-- `Ctrl + K` (or `Cmd + K`) opens a quick section jump palette
-- Scroll-in animations that respect `prefers-reduced-motion`
-- A hidden Konami code easter egg
-- Responsive layout for phone, tablet and desktop
+- Dark cinematic aesthetic with interactive starfield canvas and custom cursor
+- Adaptive navigation (top bar transitioning into a minimalist right rail on scroll)
+- `Ctrl + K` (or `Cmd + K`) quick section jump palette
+- Scroll-in reveals and stagger animations
+- Responsive layout for phone, tablet, and desktop
 - Open Graph and Twitter card meta tags for link previews
 
 ---
@@ -34,20 +33,21 @@ Built with plain HTML, CSS and JavaScript. No framework, no build step, no depen
 
 | Project | What it is | Stack | Status |
 |---|---|---|---|
-| [Smart Hostel Management System](https://github.com/nishan9-99/smart-hostel-management-system) | Hostel system with room allocation, visitor logs, complaints and payment tracking | PHP, MySQL, Bootstrap, Docker | Built |
-| [Quest HUD](https://github.com/nishan9-99/quest-hud) | Terminal task tracker styled as a game: quests, XP, levels, streaks | C++17 | Built, MIT licensed |
-| [Neon Rift](https://github.com/nishan9-99/neon-rift) | Wave-survival browser shooter in a single HTML file | HTML5 Canvas, JavaScript, CSS | Built |
-| LYRIVO | Music streaming app with sign-in and playlists | Firebase, JavaScript, HTML, CSS | In progress, no public repo yet |
+| [3D Design Hub](https://github.com/narasimha77-jpg/3d-design-hub) | Interactive 3D model viewer and explorer directly in the browser | TypeScript, Three.js, React, React Three Fiber | Built |
+| [VR SketchPad](https://github.com/narasimha77-jpg/vr-sketchpad) | Immersive virtual reality 3D drawing and spatial interaction tool | WebXR, Three.js, React, TypeScript | Built |
+| [Coordi-Guard Feed](https://github.com/narasimha77-jpg/coordi-guard-feed) | Real-time GPS tracking stream and geospatial telemetry dashboard | TypeScript, React, Real-time APIs, Geolocation | Built |
+| [CivicIssueResolve](https://github.com/narasimha77-jpg/civicissueresolve) | Citizen grievance reporting and municipal resolution platform | TypeScript, React, Node.js, PostgreSQL, REST APIs | Built |
+| [Smart Diet Planner](https://github.com/narasimha77-jpg/smart-diet-planner) | Personalized nutrition planning and daily macronutrient tracking dashboard | TypeScript, React, Tailwind CSS | Built |
+| [BUILDINTEL](https://github.com/narasimha77-jpg/BUILDINTEL) | High-performance responsive web interface and architecture analytics | TypeScript, React, Tailwind CSS | Built |
 
 ---
 
 ## Tech stack
 
-- **HTML5** - semantic structure, meta tags, accessibility labels
-- **CSS3** - custom properties, grid and flexbox, animations, media queries
-- **Vanilla JavaScript** - rendering, filters, modal, command palette, form handling
-- **Formspree** - contact form delivery
-- **Google Fonts** - Space Grotesk, Inter, Caveat
+- **HTML5** - semantic structure, accessibility labels, Schema.org JSON-LD
+- **CSS3** - custom variables, flexbox, CSS grid, keyframe animations, responsive design
+- **Vanilla JavaScript** - DOM rendering, dynamic filters, carousel, modal, command palette
+- **SimpleIcons & SVG** - lightweight vector icons
 - **GitHub Pages** - hosting
 
 ---
@@ -57,51 +57,39 @@ Built with plain HTML, CSS and JavaScript. No framework, no build step, no depen
 ```
 .
 ├── index.html        # Page markup and meta tags
-├── style.css         # All styling
-├── script.js         # Behavior, plus a CONFIG block at the top
+├── style.css         # All styling and themes
+├── script.js         # Interactive behavior and CONFIG block
 └── assets/
     ├── resume.pdf        # Resume served by the download button
-    ├── about-portrait.*  # About section image (jpg + webp)
+    ├── about-portrait.*  # About section portrait image (jpg + webp)
     ├── footer-skyline.*  # Footer image (jpg + webp)
-    └── proj-*            # Project card images
+    └── proj-*            # Project card visuals (jpg + webp)
 ```
 
-Most content lives in the `CONFIG` object at the top of `script.js`: email, social links, roles, stats, skills, projects, journey entries, the form endpoint and the resume path. To update the site, edit that block.
+Most content is configurable via the `CONFIG` object at the top of `script.js`.
 
 ---
 
 ## Run it locally
 
-No install needed.
+No dependencies or build steps required.
 
-**Option 1:** open `index.html` in a browser.
+**Option 1:** open `index.html` in any modern web browser.
 
-**Option 2:** serve it with any static server:
+**Option 2:** serve it with a static local server:
 
 ```bash
-git clone https://github.com/nishan9-99/nishan9-99.github.io.git
-cd nishan9-99.github.io
-
 # pick one
-python -m http.server 8000
+python3 -m http.server 8000
 npx serve .
 ```
 
-Then visit `http://localhost:8000`.
-
-The contact form posts to Formspree, so it needs an internet connection to send.
-
----
-
-## Deployment
-
-The site is a GitHub Pages user site, served from the `main` branch root. Pushing to `main` updates the live site after a short build.
+Then open `http://localhost:8000`.
 
 ---
 
 ## Contact
 
-- Email: gireenishan10@gmail.com
-- GitHub: [github.com/nishan9-99](https://github.com/nishan9-99)
-- LinkedIn: [Nishan Giri](https://www.linkedin.com/in/nishan-giree-264700339)
-- Location: Bengaluru, India
+- **Email:** [mulagadanarasimha77@gmail.com](mailto:mulagadanarasimha77@gmail.com)
+- **GitHub:** [github.com/narasimha77-jpg](https://github.com/narasimha77-jpg)
+- **Location:** Bangalore, India

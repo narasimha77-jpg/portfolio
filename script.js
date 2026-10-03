@@ -1,85 +1,117 @@
 /* =====================================================================
-   NISHAN GIRI — portfolio script
+   MULAGADA NARASIMHA CHOWDARY — portfolio script
    ─────────────────────────────────────────────────────────────────────
    CONFIG: everything you will ever want to edit lives in this block.
    Links, stats, skills, projects, journey, form endpoint, resume.
    ===================================================================== */
 const CONFIG = {
-  email: 'gireenishan10@gmail.com',
+  email: 'mulagadanarasimha77@gmail.com',
   location: 'Bangalore, India',
   resumePath: 'assets/resume.pdf',
   formEndpoint: 'https://formspree.io/f/moevyjor',
   socials: {
-    github:   'https://github.com/nishan9-99',
-    linkedin: 'https://www.linkedin.com/in/nishan-giree-264700339',
+    github:   'https://github.com/narasimha77-jpg',
+    linkedin: '',                             // TODO: add LinkedIn URL
     x:        '',                             // TODO: add X (Twitter) URL
     youtube:  ''                              // TODO: add YouTube channel URL
   },
-  roles: ['Full Stack Developer', 'Gamer', 'Content Creator'],
+  roles: ['Software Developer Intern', 'Full Stack Developer', 'AI & RAG Solutions', 'WebXR & 3D Specialist'],
   stats: [
-    { num: 2, suffix: '+', label: 'Years Learning' },
-    { text: 'B.E. CSE',  label: 'BMSIT, Bangalore' }
+    { num: 7, suffix: '+', label: 'Public Repos' },
+    { text: '8.50', label: 'GPA • BMSIT' }
   ],
   skills: [
     { group: 'Frontend', items: [
-      ['HTML5','html5','#E34F26','https://html.spec.whatwg.org/'], ['CSS3','css','#1572B6','https://www.w3.org/Style/CSS/'],
-      ['Bootstrap','bootstrap','#7952B3','https://getbootstrap.com'], ['JavaScript','javascript','#F7DF1E','https://developer.mozilla.org/en-US/docs/Web/JavaScript'] ] },
-    { group: 'Backend', items: [
-      ['PHP','php','#777BB4','https://www.php.net'], ['MySQL','mysql','#5BB4E6','https://www.mysql.com'], ['Firebase','firebase','#DD2C00','https://firebase.google.com'] ] },
-    { group: 'Tools', items: [
-      ['Git','git','#F05032','https://git-scm.com'], ['VS Code','vscode','#007ACC','https://code.visualstudio.com'], ['XAMPP','xampp','#FB7A24','https://www.apachefriends.org'],
-      ['Docker','docker','#2496ED','https://www.docker.com'] ] },
-    { group: 'Creative', items: [
-      ['Photoshop','ps','#31A8FF','https://www.adobe.com/products/photoshop.html'],
-      ['After Effects','ae','#9999FF','https://www.adobe.com/products/aftereffects.html'],
-      ['Premiere Pro','pr','#EA77FF','https://www.adobe.com/products/premiere.html'] ] }
+      ['TypeScript','typescript','#3178C6','https://www.typescriptlang.org/'],
+      ['React','react','#61DAFB','https://react.dev/'],
+      ['Next.js','nextdotjs','#FFFFFF','https://nextjs.org/'],
+      ['Tailwind CSS','tailwindcss','#06B6D4','https://tailwindcss.com/'],
+      ['JavaScript','javascript','#F7DF1E','https://developer.mozilla.org/en-US/docs/Web/JavaScript'],
+      ['HTML5','html5','#E34F26','https://html.spec.whatwg.org/'] ] },
+    { group: '3D & AI Solutions', items: [
+      ['Three.js','threedotjs','#FFFFFF','https://threejs.org/'],
+      ['WebXR','webxr','#5555FF','https://immersiveweb.dev/'],
+      ['React Three Fiber','react','#61DAFB','https://r3f.docs.pmnd.rs/'],
+      ['OpenAI API','openai','#412991','https://openai.com/'],
+      ['Multi-Agent RAG','api','#A78BFA','https://en.wikipedia.org/wiki/Retrieval-augmented_generation'] ] },
+    { group: 'Backend & Data', items: [
+      ['Node.js','nodedotjs','#5FA04E','https://nodejs.org/'],
+      ['Express.js','express','#FFFFFF','https://expressjs.com/'],
+      ['PostgreSQL','postgresql','#4169E1','https://www.postgresql.org/'],
+      ['MongoDB','mongodb','#47A248','https://www.mongodb.com/'],
+      ['Prisma ORM','prisma','#2D3748','https://www.prisma.io/'],
+      ['WebSockets','stream','#22D3EE','https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API'] ] },
+    { group: 'DevOps & Tools', items: [
+      ['Docker','docker','#2496ED','https://www.docker.com'],
+      ['Git','git','#F05032','https://git-scm.com'],
+      ['GitHub','github','#FFFFFF','https://github.com'],
+      ['Postman','postman','#FF6C37','https://www.postman.com'],
+      ['VS Code','vscode','#007ACC','https://code.visualstudio.com'] ] }
   ],
   projects: [
-    { id:'hostel', cat:'web', img:'assets/proj-hostel', alt:'Smart Hostel management dashboard interface',
-      title:'Smart Hostel Room & Visitor Management System',
-      desc:'A complete hostel management system with room allocation, visitor management, complaints and payment tracking.',
-      problem:'Hostel records lived in registers and spreadsheets, so rooms, visitors and complaints were slow to track.',
-      role:'Designed and built the full stack: PHP backend, MySQL schema, Bootstrap dashboards for students and wardens.',
-      result:'One system covering room allocation, visitor logs, complaints and payments end to end.',
-      tags:['PHP','MySQL','Bootstrap','Docker'],
-      link:'https://github.com/nishan9-99/smart-hostel-management-system', linkLabel:'View on GitHub',
-      icon:'github', iconLink:'https://github.com/nishan9-99/smart-hostel-management-system' },
-    { id:'lyrivo', cat:'web', img:'assets/proj-lyrivo', alt:'LYRIVO music streaming app interface',
-      title:'LYRIVO — Music Streaming App', badge:'Upcoming',
-      desc:'A modern music streaming application with authentication, playlists and smooth music playback.',
-      problem:'Wanted a personal, distraction-free listening space with my own playlists.',
-      role:'Building the app solo: Firebase auth, playlist logic and the playback UI. (In progress)',
-      result:'Working prototype with sign-in, playlists and smooth playback. Full release coming soon.',
-      tags:['Firebase','JavaScript','HTML','CSS'],
-      link:'', linkLabel:'View on GitHub',
-      icon:'github', iconLink:'' },
-    { id:'questhud', cat:'creative', img:'assets/proj-questhud', alt:'Quest HUD terminal task tracker interface',
-      title:'Quest HUD — Terminal Task Tracker',
-      desc:'A game-HUD terminal task tracker in C++17 — quests, XP, levels and streaks. Your to-do list, but it is a game.',
-      problem:'Plain to-do lists are easy to ignore; there is no feedback loop that makes finishing tasks feel good.',
-      role:'Designed and built the whole CLI in C++17: quest tracking, XP and level logic, streaks, HUD-styled output.',
-      result:'A working terminal tracker that turns daily tasks into quests, released open source under the MIT license.',
-      tags:['C++17','CLI','Open Source'],
-      link:'https://github.com/nishan9-99/quest-hud', linkLabel:'View on GitHub',
-      icon:'github', iconLink:'https://github.com/nishan9-99/quest-hud' },
-    { id:'neonrift', cat:'creative', img:'assets/proj-neonrift', alt:'Neon Rift wave survival shooter gameplay',
-      title:'Neon Rift — Wave Survival Shooter',
-      desc:'A neon browser wave-survival shooter in a single HTML file — dash through danger, clear scaling waves, chase the high score.',
-      problem:'Wanted a fast, juicy arcade game that runs anywhere with zero installs or build tools.',
-      role:'Built the whole game solo: HTML5 Canvas rendering, enemy AI, particles and synthesized sound effects.',
-      result:'A complete playable game with 3 enemy types, shields, scoring, pause and touch controls — all in one index.html.',
-      tags:['HTML5 Canvas','JavaScript','CSS'],
-      link:'https://github.com/nishan9-99/neon-rift', linkLabel:'View on GitHub',
-      icon:'github', iconLink:'https://github.com/nishan9-99/neon-rift' }
+    { id:'3ddesign', cat:'creative', img:'assets/proj-3ddesign', alt:'3D Design Hub WebXR visualization platform',
+      title:'3D Design Hub — WebXR 3D Visualization',
+      desc:'A web-based 3D visualization platform with immersive WebXR support, real-time model rendering, and scene navigation.',
+      problem:'Viewing and interacting with complex 3D assets traditionally required high-friction desktop installations.',
+      role:'Engineered the WebXR interactive scene: model loaders, lighting configurations, orbit controls, and real-time browser rendering.',
+      result:'High-performance browser-based 3D environment allowing interactive inspection and navigation in VR and desktop.',
+      tags:['React','Three.js','React Three Fiber','WebXR','TypeScript'],
+      link:'https://github.com/narasimha77-jpg/3d-design-hub', linkLabel:'View on GitHub',
+      icon:'github', iconLink:'https://github.com/narasimha77-jpg/3d-design-hub' },
+    { id:'coordiguard', cat:'web', img:'assets/proj-coordiguard', alt:'CoordFeed real-time GPS coordinate beacon interface',
+      title:'CoordFeed — Real-Time GPS Coordinate Beacon',
+      desc:'Real-time GPS tracking application featuring REST APIs, live coordinate streams, route history, and backend monitoring.',
+      problem:'Tracking rapid location updates with low latency while managing efficient backend state updates.',
+      role:'Implemented the real-time GPS tracking pipeline, REST APIs, route history logging, and telemetry status monitoring.',
+      result:'Reliable real-time geospatial tracking feed with live location synchronization and monitoring tools.',
+      tags:['Node.js','Express.js','REST APIs','Real-time Streams'],
+      link:'https://github.com/narasimha77-jpg/coordi-guard-feed', linkLabel:'View on GitHub',
+      icon:'github', iconLink:'https://github.com/narasimha77-jpg/coordi-guard-feed' },
+    { id:'vrsketch', cat:'creative', img:'assets/proj-vrsketch', alt:'SketchPad real-time drawing and interaction canvas',
+      title:'SketchPad — Real-Time Drawing & Interaction Canvas', badge:'WebXR & WebSockets',
+      desc:'Collaborative drawing application featuring real-time synchronization using WebSockets and multi-user interaction tools.',
+      problem:'Standard web drawing boards lack low-latency multi-user collaboration and 3D spatial input flexibility.',
+      role:'Built collaborative drawing tools, WebSockets synchronization pipeline, and multi-user canvas interaction handlers.',
+      result:'Smooth real-time collaborative sketching experience with instant stroke synchronization across active clients.',
+      tags:['HTML5 Canvas','JavaScript','Node.js','Express.js','WebSockets'],
+      link:'https://github.com/narasimha77-jpg/vr-sketchpad', linkLabel:'View on GitHub',
+      icon:'github', iconLink:'https://github.com/narasimha77-jpg/vr-sketchpad' },
+    { id:'civicissueresolve', cat:'web', img:'assets/proj-civicissueresolve', alt:'CivicIssueResolve municipal grievance tracking platform',
+      title:'CivicIssueResolve — Citizen Grievance & Resolution Platform', badge:'Full Stack',
+      desc:'A full-stack application for reporting, tracking, and resolving municipal civic issues with real-time updates and public dashboards.',
+      problem:'Civic complaints submitted through traditional channels are hard to trace, slow to resolve, and lack departmental accountability.',
+      role:'Designed the end-to-end architecture: issue reporting forms, automated department routing, real-time ticket statuses, and admin dashboards.',
+      result:'A transparent, responsive civic tracking portal enabling citizens to log grievances and monitor municipal resolution workflows in real time.',
+      tags:['TypeScript','React','Node.js','PostgreSQL','REST APIs'],
+      link:'https://github.com/narasimha77-jpg/civicissueresolve', linkLabel:'View on GitHub',
+      icon:'github', iconLink:'https://github.com/narasimha77-jpg/civicissueresolve' },
+    { id:'smartdiet', cat:'web', img:'assets/proj-smartdiet', alt:'Smart Diet Planner health interface',
+      title:'Smart Diet Planner — Nutrition Dashboard',
+      desc:'Intelligent nutrition and personalized meal planning application tailored to health metrics and dietary goals.',
+      problem:'Managing daily caloric targets and balanced macronutrient ratios manually is tedious and prone to drop-off.',
+      role:'Constructed nutritional calculation models, daily schedule cards, macronutrient breakdown charts, and meal trackers.',
+      result:'An intuitive daily meal planning web app that simplifies balanced nutrition and macro tracking.',
+      tags:['TypeScript','React','Tailwind CSS'],
+      link:'https://github.com/narasimha77-jpg/smart-diet-planner', linkLabel:'View on GitHub',
+      icon:'github', iconLink:'https://github.com/narasimha77-jpg/smart-diet-planner' },
+    { id:'buildintel', cat:'web', img:'assets/proj-buildintel', alt:'BUILDINTEL responsive metrics dashboard',
+      title:'BUILDINTEL — Architecture & Metrics',
+      desc:'Modern responsive web interface and analytics dashboard built for high-performance frontend workflows.',
+      problem:'Complex metric dashboards often suffer from bloated styling and poor responsiveness across device viewports.',
+      role:'Crafted pixel-perfect components, responsive grid layouts, and clean telemetry data visualization widgets.',
+      result:'A sleek, highly responsive analytics dashboard built to exacting standards with modern TypeScript.',
+      tags:['TypeScript','React','Tailwind CSS'],
+      link:'https://github.com/narasimha77-jpg/BUILDINTEL', linkLabel:'View on GitHub',
+      icon:'github', iconLink:'https://github.com/narasimha77-jpg/BUILDINTEL' }
   ],
   journey: [
-    { title:'B.E. CSE — BMSIT, Bangalore', sub:'The foundation', text:'Computer Science undergrad, focused on software engineering and full stack development.' },
-    { title:'Started building for the web', sub:'First lines to first pages', text:'HTML, CSS and JavaScript turned into a habit of shipping small, finished things.' },
-    { title:'Smart Hostel shipped', sub:'First real system', text:'A complete PHP + MySQL management system with role-based dashboards.' },
-    { title:'LYRIVO in progress', sub:'Leveling up', text:'Music streaming with Firebase auth and playlists — the next portfolio piece.' },
-    { title:'Game dev & content', sub:'The creative lane', text:'Learning game development and producing gaming content alongside code.' }
+    { title:'B.E. Computer Science — BMSIT (GPA: 8.50)', sub:'Academic Foundation', text:'Focused on software engineering, distributed systems, full-stack architectures, and AI foundations.' },
+    { title:'Full-Stack Web & TypeScript Mastery', sub:'Modern Engineering', text:'Built robust, type-safe full-stack platforms using React, Next.js, Node.js, and PostgreSQL.' },
+    { title:'3D Visualization & WebXR Immersive Web', sub:'Spatial Computing', text:'Created 3D Design Hub and SketchPad exploring Three.js, React Three Fiber, and real-time WebXR.' },
+    { title:'Real-Time Geospatial Systems', sub:'CoordFeed Beacon', text:'Engineered real-time GPS coordinate streaming pipelines and backend monitoring features.' },
+    { title:'Civic Technology & Problem Solving', sub:'CivicIssueResolve', text:'Built an end-to-end municipal grievance reporting and resolution platform for community transparency.' }
   ],
-  marquee: ['HTML5','CSS3','JavaScript','Bootstrap','PHP','MySQL','Firebase','Git','VS Code','XAMPP']
+  marquee: ['TypeScript','React','Next.js','Node.js','PostgreSQL','Three.js','WebXR','Tailwind CSS','Docker','OpenAI']
 };
 /* ================== end of CONFIG — code below ================== */
 
@@ -100,6 +132,12 @@ const ICONS = {
   pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 1 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>',
   award: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="9" r="6"/><path d="m8.5 14-2 8 5.5-3 5.5 3-2-8"/></svg>',
   vscode: '<svg viewBox="0 0 24 24"><path fill="#007ACC" d="M17.6 2.3 9.4 10.6 4.7 6.9 2.3 8.1v7.8l2.4 1.2 4.7-3.7 8.2 8.3 4.1-2V4.3l-4.1-2zM4.7 14.5v-5l2.5 2.5-2.5 2.5zM17.6 15.7 13 12l4.6-3.7v7.4z"/></svg>',
+  typescript: '<svg viewBox="0 0 24 24"><rect width="24" height="24" rx="4.5" fill="#3178C6"/><path fill="#FFFFFF" d="M12.5 13.5h2.5v7h2.2v-7H20v-2h-7.5v2zm-2.8 4.2c-.4.5-1.1.9-1.9.9-1.3 0-2.2-.8-2.2-2.3 0-1.7 1.2-2.3 2.3-2.7l.6-.2c.5-.2.8-.4.8-.8 0-.5-.4-.8-1-.8-.7 0-1.2.3-1.6.8l-1.2-1.2c.7-.9 1.7-1.4 2.8-1.4 1.7 0 2.8.9 2.8 2.4v.3c0 1.5-.9 2.1-2.1 2.5l-.6.2c-.6.2-.9.4-.9.9 0 .6.5.9 1.1.9.6 0 1.1-.3 1.5-.7l1.4 1z"/></svg>',
+  react: '<svg viewBox="0 0 24 24" fill="none"><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#61DAFB" stroke-width="1.2" transform="rotate(30 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#61DAFB" stroke-width="1.2" transform="rotate(90 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4" stroke="#61DAFB" stroke-width="1.2" transform="rotate(150 12 12)"/><circle cx="12" cy="12" r="1.8" fill="#61DAFB"/></svg>',
+  threedotjs: '<svg viewBox="0 0 24 24"><path fill="#FFFFFF" d="M21.75 6.75 12 1.125 2.25 6.75v10.5L12 22.875l9.75-5.625V6.75zm-9.75 13.9-7.5-4.33V8.83l7.5 4.33v7.49zm1.5 0v-7.49l7.5-4.33v7.49l-7.5 4.33zM12 11.5 4.5 7.17 12 2.84l7.5 4.33L12 11.5z"/></svg>',
+  webxr: '<svg viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="1.8"><rect x="2" y="6" width="20" height="12" rx="4"/><circle cx="8" cy="12" r="2.5"/><circle cx="16" cy="12" r="2.5"/><path d="M10.5 12h3"/></svg>',
+  stream: '<svg viewBox="0 0 24 24" fill="none" stroke="#22D3EE" stroke-width="1.8"><path d="M4 12h4l3-6 4 12 3-6h4"/></svg>',
+  api: '<svg viewBox="0 0 24 24" fill="none" stroke="#A78BFA" stroke-width="1.8"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M8 9l3 3-3 3M13 15h4"/></svg>',
   ps: '<svg viewBox="0 0 24 24"><rect width="24" height="24" rx="4.5" fill="#001E36"/><text x="12" y="16.3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="10" fill="#31A8FF">Ps</text></svg>',
   ae: '<svg viewBox="0 0 24 24"><rect width="24" height="24" rx="4.5" fill="#00005B"/><text x="12" y="16.3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="10" fill="#9999FF">Ae</text></svg>',
   pr: '<svg viewBox="0 0 24 24"><rect width="24" height="24" rx="4.5" fill="#00005B"/><text x="12" y="16.3" text-anchor="middle" font-family="Arial,Helvetica,sans-serif" font-weight="700" font-size="10" fill="#EA77FF">Pr</text></svg>'
@@ -155,14 +193,14 @@ const socialLinks = (cls) => ['github','linkedin','x','youtube']
 (() => {
   const pre = $('#preloader');
   let seen = false;
-  try { seen = sessionStorage.getItem('ng-seen'); } catch(e) {}
+  try { seen = sessionStorage.getItem('nc-seen'); } catch(e) {}
   if (seen || prefersReduced){ pre.remove(); return; }
   const bar = $('.pre-line i');
   let p = 0;
   const iv = setInterval(() => { p = Math.min(100, p + 18 + Math.random()*22); bar.style.width = p + '%'; }, 120);
   const done = () => {
     clearInterval(iv); bar.style.width = '100%';
-    setTimeout(() => { pre.classList.add('done'); try { sessionStorage.setItem('ng-seen','1'); } catch(e) {} }, 200);
+    setTimeout(() => { pre.classList.add('done'); try { sessionStorage.setItem('nc-seen','1'); } catch(e) {} }, 200);
   };
   addEventListener('load', () => setTimeout(done, Math.max(0, 900 - performance.now())));
   setTimeout(done, 1200);
@@ -477,7 +515,7 @@ $('#cform').addEventListener('submit', async e => {
   if (!n || !em || !m){ status.textContent = 'Please fill in all three fields.'; status.classList.add('err'); return; }
   if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){ status.textContent = 'That email address does not look right.'; status.classList.add('err'); return; }
   if (!CONFIG.formEndpoint){
-    const body = encodeURIComponent(`Hi Nishan,\n\n${m}\n\n- ${n} (${em})`);
+    const body = encodeURIComponent(`Hi Narasimha,\n\n${m}\n\n- ${n} (${em})`);
     location.href = `mailto:${CONFIG.email}?subject=${encodeURIComponent('Portfolio Contact from '+n)}&body=${body}`;
     status.textContent = 'Opening your email app...'; status.classList.add('ok');
     return;
