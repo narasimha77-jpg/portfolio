@@ -4,17 +4,21 @@
    CONFIG: everything you will ever want to edit lives in this block.
    Links, stats, skills, projects, journey, form endpoint, resume.
    ===================================================================== */
+
 const CONFIG = {
   email: 'mulagadanarasimha77@gmail.com',
+  phone: '6303781034',
   location: 'Bangalore, India',
   resumePath: 'assets/resume.pdf',
   formEndpoint: 'https://formspree.io/f/moevyjor',
+
   socials: {
-    github:   'https://github.com/narasimha77-jpg',
-    linkedin: '',                             // TODO: add LinkedIn URL
-    x:        '',                             // TODO: add X (Twitter) URL
-    youtube:  ''                              // TODO: add YouTube channel URL
+    github: 'https://github.com/narasimha77-jpg',
+    linkedin: '',
+    x: '',
+    youtube: ''
   },
+
   roles: ['Software Developer Intern', 'Full Stack Developer', 'AI & RAG Solutions', 'WebXR & 3D Specialist'],
   stats: [
     { num: 7, suffix: '+', label: 'Public Repos' },
@@ -153,7 +157,14 @@ const socialLinks = (cls) => ['github','linkedin','x','youtube']
   $('#heroSocial').innerHTML = socialLinks() + gmailLink();
   $('#contactSocial').innerHTML = socialLinks() + gmailLink();
   $('#footSocial').innerHTML = socialLinks() + gmailLink();
-  $('#contactLines').innerHTML =
+  
+$('#contactLines').innerHTML =
+  `<span class="c-line">${ICONS.gmail}${CONFIG.email}</span>
+   <a class="c-line" href="tel:${CONFIG.phone}" aria-label="Call ${CONFIG.phone}">
+     ${ICONS.pin}${CONFIG.phone}
+   </a>
+   <span class="c-line">${ICONS.pin}${CONFIG.location}</span>`;
+
     `<span class="c-line">${ICONS.gmail}${CONFIG.email}</span>
      <span class="c-line">${ICONS.pin}${CONFIG.location}</span>`;
   $('#heroStats').innerHTML = CONFIG.stats.map(s => s.num !== undefined
